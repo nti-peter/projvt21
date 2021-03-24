@@ -1,24 +1,38 @@
 /* Denna fil skall innehålla din CSS kod */
 *{margin: 0;}
 
-#container {
+#headercontainer {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     grid-template-areas: 
     "he he he"
     "ia ia ia"
     "ia ia ia"
-    "ic ic ic"
-    "ic ic ic"
-    "ic ic ic"
-    
     
     ;
 
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(6,1fr);
-    grid-gap: 10px;
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 0px;
+    background-color: rgb(228, 228, 228);
+    
+}
+
+#articlecontainer {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "ic ic ic"
+    "ic ic ic"
+    "ic ic ic"
+    
+    ;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 0px;
     background-color: rgb(228, 228, 228);
     
 }
