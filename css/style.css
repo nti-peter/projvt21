@@ -1,93 +1,144 @@
 /* Denna fil skall innehålla din CSS kod */
 *{margin: 0;}
 
+#parallax {
+    background: url('../img/valhallabadet2.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 200vh;
+
+}
+
 #headercontainer {
     display: grid;
     width: 100vw;
     height: 60vh;
     grid-template-areas: 
     "he he he"
-    "ia ia ia"
-    "ia ia ia"
+    "ia1 ia1 ia1"
+    "ia1 ia1 ia1"
     
     ;
 
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-gap: 0px;
-    background-color: rgb(228, 228, 228);
+    
     
 }
+
+
 
 #articlecontainer {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 140vh;
     grid-template-areas: 
-    "ic ic ic"
-    "ic ic ic"
-    "ic ic ic"
+    "ia2 ic ic ic ic ia3"
+    "ia4 ic ic ic ic ia5"
+    "ia6 ic ic ic ic ia7"
     
     ;
 
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-gap: 0px;
-    background-color: rgb(228, 228, 228);
+    
     
 }
 
 #header {
     grid-area: he;
-    background-color: rgb(14, 14, 14);
+    background-color: white
 }
 
 #innercontainer {
+    width: 100vw;
     display: grid;
     grid-area: ic;
     grid-template-areas: 
     "a1 a1 a1"
-    "a2 a3 a4"
+    "a2 a2 a2"
+    "a3 a4 a5"
     
     ;
 
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 20px;
     
 }
 
 #article1 {
     grid-area: a1;
-    background-color: darkcyan;
+    background-color: white;
 }
 
 #article2 {
     grid-area: a2;
-    background-color: darkcyan;
+    background-color: white;
 }
 
 #article3 {
     grid-area: a3;
-    background-color: darkcyan;
+    background-color: white;
 }
 
 #article4 {
     grid-area: a4;
-    background-color: darkcyan;
+    background-color: white;
 }
 
 #article5 {
     grid-area: a5;
-    background-color: darkcyan;
+    background-color: white;
 }
 
 #article6 {
     grid-area: a6;
-    background-color: darkcyan;
+    background-color: white;
 }
 
-#invisiblearticle {
-    grid-area: ia;
+#invisiblearticle1 {
+    grid-area: ia1;
+    background-color: transparent;
     
 }
+
+#invisiblearticle2 {
+    grid-area: ia2;
+    background-color: transparent;
+    
+}
+
+#invisiblearticle3 {
+    grid-area: ia3;
+    background-color: transparent;
+    
+}
+
+#invisiblearticle4 {
+    grid-area: ia4;
+    background-color: transparent;
+    
+}
+
+#invisiblearticle5 {
+    grid-area: ia5;
+    background-color: transparent;
+    
+}
+
+#invisiblearticle6 {
+    grid-area: ia6;
+    background-color: transparent;
+    
+}
+
+#invisiblearticle7 {
+    grid-area: ia7;
+    background-color: transparent;
+    
+}
+
