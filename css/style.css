@@ -1,144 +1,529 @@
 /* Denna fil skall innehålla din CSS kod */
 *{margin: 0;}
 
-#parallax {
-    background: url('../img/valhallabadet2.jpg') no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100vw;
-    height: 200vh;
 
-}
+/* Telefon */ 
 
-#headercontainer {
-    display: grid;
-    width: 100vw;
-    height: 60vh;
-    grid-template-areas: 
-    "he he he"
-    "ia1 ia1 ia1"
-    "ia1 ia1 ia1"
+@media screen and (max-width:750px) {
+    #parallax {
+        background: url('../img/valhallabadet2.jpg') no-repeat;
+        background-attachment: fixed;
+        background-size: 150% 50%;
+       
+        width: 100vw;
+        height: 100vh;
     
-    ;
+    }
+    
+    #headercontainer {
+        display: grid;
+        width: 100vw;
+        height: 20px;
+        grid-template-areas: 
+        "he he he"
+        
+        ;
+    
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-gap: 0vh;
 
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-gap: 0px;
+        background-color: black;
+        
+        
+    }
+    
+    #invisiblearticlecontainer {
+        display: grid;
+        width: 100vw;
+        height: 25vh;
+        grid-template-areas: 
+        "ia1"
+        
+        
+        ;
+    
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-gap: 0vh;
+        
+        
+    }
+    
+    #logo {
+        grid-area: lo;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        
+        
+    }
+
     
     
-}
-
-
-
-#articlecontainer {
-    display: grid;
-    width: 100vw;
-    height: 140vh;
-    grid-template-areas: 
-    "ia2 ic ic ic ic ia3"
-    "ia4 ic ic ic ic ia5"
-    "ia6 ic ic ic ic ia7"
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: transparent;
+    }
     
-    ;
-
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-gap: 0px;
+    .flex-container > div {
+        background-color: #f1f1f1;
+        height: 10vh;
+        width: 10vw;
+        margin: 10px;
+        text-align: center;
+        justify-content: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
     
     
-}
-
-#header {
-    grid-area: he;
-    background-color: white
-}
-
-#innercontainer {
-    width: 100vw;
-    display: grid;
-    grid-area: ic;
-    grid-template-areas: 
-    "a1 a1 a1"
-    "a2 a2 a2"
-    "a3 a4 a5"
     
-    ;
-
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-gap: 20px;
+    #articlecontainer {
+        display: grid;
+        width: 100vw;
+        height: 140vh;
+        grid-template-areas: 
+        "ic ic ic ic"
+        "ic ic ic ic"
+        "ic ic ic ic"
+        
+        ;
     
-}
-
-#article1 {
-    grid-area: a1;
-    background-color: white;
-}
-
-#article2 {
-    grid-area: a2;
-    background-color: white;
-}
-
-#article3 {
-    grid-area: a3;
-    background-color: white;
-}
-
-#article4 {
-    grid-area: a4;
-    background-color: white;
-}
-
-#article5 {
-    grid-area: a5;
-    background-color: white;
-}
-
-#article6 {
-    grid-area: a6;
-    background-color: white;
-}
-
-#invisiblearticle1 {
-    grid-area: ia1;
-    background-color: transparent;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 0vh;
+        
+        
+    }
     
+    #header {
+        grid-area: he;
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        position: fixed;
+    }
+    
+    #innercontainer {
+        
+        display: grid;
+        grid-area: ic;
+        grid-template-areas: 
+        "a1 a1 a1"
+        "a2 a2 a2"
+        "a3 a4 a5"
+        
+        ;
+    
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 1vh;
+        padding: 5vh;
+    
+        background-color: rgb(236, 236, 236);
+        
+    }
+    
+    #article1 {
+        grid-area: a1;
+        background-color: white;
+    }
+    
+    #article2 {
+        grid-area: a2;
+        background-color: white;
+    }
+    
+    #article3 {
+        grid-area: a3;
+        background-color: white;
+    }
+    
+    #article4 {
+        grid-area: a4;
+        background-color: white;
+    }
+    
+    #article5 {
+        grid-area: a5;
+        background-color: white;
+    }
+    
+    #article6 {
+        grid-area: a6;
+        background-color: white;
+    }
+    
+    #invisiblearticle1 {
+        grid-area: ia1;
+        height: 25vh;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle2 {
+        grid-area: ia2;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle3 {
+        grid-area: ia3;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle4 {
+        grid-area: ia4;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle5 {
+        grid-area: ia5;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle6 {
+        grid-area: ia6;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle7 {
+        grid-area: ia7;
+        background-color: transparent;
+        
+    }
+    
+    
+    #container {
+        display: grid;
+        width: 100vw;
+        height: 80vh;
+
+        grid-template-areas:
+          'he2 he2 he2'
+          'he3 he3 he3'
+          'me me me' 
+          'ma ma ma' 
+          'ri ri ri'
+          'fo fo fo';
+        grid-gap: 10px;
+        background-color: rgb(238, 238, 238);
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    .header2 { 
+        grid-area: he2; 
+        height: 50vh;
+    }
+
+    .header3 { 
+        grid-area: he3; 
+    }
+
+    .menu { 
+        grid-area: me;
+    }
+
+    .main { 
+        grid-area: ma; 
+    }
+
+    .right { 
+        grid-area: ri; 
+    }
+
+    .footer { 
+        grid-area: fo; 
+    }
 }
 
-#invisiblearticle2 {
-    grid-area: ia2;
-    background-color: transparent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop */ 
+
+@media screen and (min-width:750px) {
+    #parallax {
+        background: url('../img/valhallabadet2.jpg') no-repeat;
+        background-attachment: fixed;
+        background-size: 150% 50%;
+       
+        width: 100vw;
+        height: 100vh;
     
+    }
+    
+    #headercontainer {
+        display: grid;
+        width: 100vw;
+        height: 20px;
+        grid-template-areas: 
+        "he he he"
+        
+        ;
+    
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-gap: 0vh;
+        
+        
+    }
+    
+    #invisiblearticlecontainer {
+        display: grid;
+        width: 100vw;
+        height: 25vh;
+        grid-template-areas: 
+        "ia1"
+        
+        
+        ;
+    
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-gap: 0vh;
+        
+        
+    }
+    
+    #logo {
+        display: flex;
+        justify-content: left;
+        position: fixed;
+        
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: transparent;
+    }
+    
+    .flex-container > div {
+        background-color: #f1f1f1;
+        height: 10vh;
+        width: 10vw;
+        margin: 10px;
+        text-align: center;
+        justify-content: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    
+    
+    
+    #articlecontainer {
+        display: grid;
+        width: 100vw;
+        height: 140vh;
+        grid-template-areas: 
+        "ic ic ic ic"
+        "ic ic ic ic"
+        "ic ic ic ic"
+        
+        ;
+    
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 0vh;
+        
+        
+    }
+    
+    #header {
+        grid-area: he;
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        position: fixed;
+    }
+    
+    #innercontainer {
+        
+        display: grid;
+        grid-area: ic;
+        grid-template-areas: 
+        "a1 a1 a1"
+        "a2 a2 a2"
+        "a3 a4 a5"
+        
+        ;
+    
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 1vh;
+        padding: 5vh;
+    
+        background-color: rgb(236, 236, 236);
+        
+    }
+    
+    #article1 {
+        grid-area: a1;
+        background-color: white;
+    }
+    
+    #article2 {
+        grid-area: a2;
+        background-color: white;
+    }
+    
+    #article3 {
+        grid-area: a3;
+        background-color: white;
+    }
+    
+    #article4 {
+        grid-area: a4;
+        background-color: white;
+    }
+    
+    #article5 {
+        grid-area: a5;
+        background-color: white;
+    }
+    
+    #article6 {
+        grid-area: a6;
+        background-color: white;
+    }
+    
+    #invisiblearticle1 {
+        grid-area: ia1;
+        height: 25vh;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle2 {
+        grid-area: ia2;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle3 {
+        grid-area: ia3;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle4 {
+        grid-area: ia4;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle5 {
+        grid-area: ia5;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle6 {
+        grid-area: ia6;
+        background-color: transparent;
+        
+    }
+    
+    #invisiblearticle7 {
+        grid-area: ia7;
+        background-color: transparent;
+        
+    }
+    
+    
+    #container {
+        display: grid;
+        width: 100vw;
+        height: 80vh;
+
+        grid-template-areas:
+          'he2 he2 he2 he3 he3 he3'
+          'me ma ma ma ri ri'
+          'me fo fo fo fo fo';
+        grid-gap: 10px;
+        background-color: rgb(238, 238, 238);;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    .header2 { 
+        grid-area: he2; 
+    }
+
+    .header3 { 
+        grid-area: he3; 
+    }
+
+    .menu { 
+        grid-area: me;
+    }
+
+    .main { 
+        grid-area: ma; 
+    }
+
+    .right { 
+        grid-area: ri; 
+    }
+
+    .footer { 
+        grid-area: fo; 
+    }
 }
 
-#invisiblearticle3 {
-    grid-area: ia3;
-    background-color: transparent;
-    
-}
-
-#invisiblearticle4 {
-    grid-area: ia4;
-    background-color: transparent;
-    
-}
-
-#invisiblearticle5 {
-    grid-area: ia5;
-    background-color: transparent;
-    
-}
-
-#invisiblearticle6 {
-    grid-area: ia6;
-    background-color: transparent;
-    
-}
-
-#invisiblearticle7 {
-    grid-area: ia7;
-    background-color: transparent;
-    
-}
 
