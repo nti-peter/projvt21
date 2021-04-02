@@ -1,5 +1,9 @@
 /* Denna fil skall innehålla din CSS kod */
-*{margin: 0;}
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 
 /* Telefon */ 
@@ -56,8 +60,76 @@
         justify-content: center;
         position: fixed;
         
-        
     }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 80px;
+        background-color: black;
+        font-family: sans-serif;
+    }
+
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        right: 0px;
+        height: 91vh;
+        top: -91vh;
+        background-color: black;
+        align-items: center;
+        width: 100%;
+        transition: all 1s;
+        padding-top: 50px;
+    }
+
+    .navActive {
+        transform: translateY(100vh);
+    }
+
+    .navLinks li {
+        list-style: none;
+    }
+
+    .navLinks a {
+        color: whitesmoke;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .burger {
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 10%;
+        transition: all;
+    }
+
+    
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
 
     
     
