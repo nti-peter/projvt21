@@ -54,11 +54,15 @@
         
     }
     
-    #logo {
+    .logo {
         grid-area: lo;
         display: flex;
         justify-content: center;
         position: fixed;
+
+        margin-left: 20%;
+        
+
         
     }
 
@@ -67,7 +71,7 @@
         justify-content: flex-end;
         align-items: center;
         height: 80px;
-        background-color: black;
+        background-color: transparent;
         font-family: sans-serif;
     }
 
@@ -88,6 +92,7 @@
 
     .navActive {
         transform: translateY(100vh);
+        
     }
 
     .navLinks li {
@@ -96,15 +101,16 @@
 
     .navLinks a {
         color: whitesmoke;
-        text-decoration: none;
+        text-decoration: underline;
         letter-spacing: 3px;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
     }
     
     .burger {
         margin-right: 25px;
         cursor: pointer;
+        position: fixed;
     }
 
     .burger div {

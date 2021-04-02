@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\klocka"
+		},
+		{
+			"path": "..\\dateprov"
+		},
+		{
+			"path": "..\\betygräknare"
+		},
+		{
+			"path": "..\\progprojvt21"
+		},
+		{
+			"path": "..\\food"
+		},
+		{
+			"path": "..\\..\\food - Copy"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projvt21"
+	}
+}
