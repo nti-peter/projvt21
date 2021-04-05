@@ -279,7 +279,7 @@
     #container {
         display: grid;
         width: 100vw;
-        height: 300vh;
+        height: 250vh;
 
         grid-template-areas:
           'he2 he2 he2'
@@ -305,7 +305,7 @@
     h2 {
         color: black;
         text-decoration: underline;
-        letter-spacing: 3px;
+        letter-spacing: 0px;
         font-weight: bold;
         font-size: 30px;
     }
@@ -362,18 +362,19 @@
 
     .right { 
         grid-area: ri; 
-        height: 50vh;
+        height: 25vh;
 
         color: black;
         text-decoration: none;
         letter-spacing: 0px;
         font-weight: unset;
         font-size: 30px;
+        list-style: none;
     }
 
     .footer { 
         grid-area: fo; 
-        height: 50vh;
+        height: 25vh;
 
         color: black;
         text-decoration: none;
