@@ -382,6 +382,20 @@
         font-weight: unset;
         font-size: 30px;
     }
+
+    .swimofhopeimage {
+        grid-area: ni;
+        display: flex;
+        justify-content: center;
+        position: unset;
+        padding: 10px;
+        padding-left: 20%;
+       
+        width: 80%;
+        height: 75%;
+    }
+
+
 }
 
 
