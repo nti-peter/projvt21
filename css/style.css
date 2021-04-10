@@ -442,6 +442,118 @@
     }
 
 
+    
+
+
+
+
+
+    #competecontainer {
+        display: grid;
+        width: 100vw;
+        height: 150vh;
+
+        grid-template-areas:
+          'he2 he2 he2'
+          'he2 he2 he2'
+          'he3 he3 he3'
+          'he3 he3 he3'
+          'me me me'
+          'me me me'
+          ;
+        grid-gap: 10px;
+        background-color: rgba(0, 0, 0, 0.829);
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #competearticlecontainer {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+        "ic ic ic ic"
+        "ic ic ic ic"
+        "ic ic ic ic"
+        
+        ;
+    
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 0vh;
+        
+    }
+
+    #competecontainer > div {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+    #contactcontainer {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+
+        grid-template-areas:
+          'he4 he4 he4'
+          'he4 he4 he4'
+          'he4 he4 he4'
+          'he4 he4 he4'
+          'he4 he4 he4'
+          'he4 he4 he4'
+          ;
+        grid-gap: 10px;
+        background-color: rgba(0, 0, 0, 0.829);
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #contactarticlecontainer {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+        "ic ic ic ic"
+        "ic ic ic ic"
+        "ic ic ic ic"
+        
+        ;
+    
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 0vh;
+        
+    }
+
+    #contactcontainer > div {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .header4 {
+        grid-area: he4; 
+        height: 100vh;
+
+        color: black;
+        text-decoration: none;
+        letter-spacing: 0px;
+        font-weight: unset;
+        font-size: 30px;
+    }
+
+
 }
 
 
