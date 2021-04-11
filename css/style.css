@@ -326,6 +326,16 @@
         width: 100%;
         height: 65%;
     }
+
+    .associationlogo {
+        grid-area: al;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin-left: 13%;
+       
+        width: 70%;
+    }
     
 
     .header3 { 
@@ -551,6 +561,10 @@
         letter-spacing: 0px;
         font-weight: unset;
         font-size: 30px;
+
+        list-style: none;
+
+        
     }
 
 
@@ -614,6 +628,8 @@
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(1,1fr);
         grid-gap: 0vh;
+
+        background-color: black;
         
         
     }
@@ -635,12 +651,88 @@
         
     }
     
-    #logo {
+    .logo {
+        grid-area: lo;
         display: flex;
-        justify-content: left;
+        justify-content: center;
         position: fixed;
+
+        margin-left: 42%;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 80px;
+        background-color: transparent;
+        font-family: sans-serif;
+    }
+
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: -92vh;
+        background-color: black;
+        align-items: center;
+        width: 20%;
+        transition: all 1s;
         
     }
+
+    .navActive {
+        transform: translateY(100vh);
+        
+    }
+
+    .navLinks li {
+        list-style: none;
+    }
+
+    .navLinks a {
+        color: whitesmoke;
+        text-decoration: underline;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    .burger {
+        margin-right: 25px;
+        cursor: pointer;
+        position: fixed;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 10%;
+        transition: all;
+    }
+
+    
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+
+    
     
     .flex-container {
         display: flex;
@@ -664,8 +756,8 @@
     
     #articlecontainer {
         display: grid;
-        width: 100vw;
-        height: 140vh;
+        width: 99vw;
+        height: 125vh;
         grid-template-areas: 
         "ic ic ic ic"
         "ic ic ic ic"
@@ -784,48 +876,292 @@
     
     #container {
         display: grid;
-        width: 100vw;
-        height: 80vh;
+        width: 99vw;
+        height: 125vh;
 
         grid-template-areas:
           'he2 he2 he2 he3 he3 he3'
-          'me ma ma ma ri ri'
-          'me fo fo fo fo fo';
+          'me ma ma ma ri ri' 
+          'fo fo fo fo fo fo' 
+        ;
         grid-gap: 10px;
-        background-color: rgb(238, 238, 238);;
+        background-color: rgba(0, 0, 0, 0.829);
+        
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
     #container > div {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgb(255, 255, 255);
         text-align: center;
         padding: 20px 0;
+        font-size: 20px;
+    }
+
+    h2 {
+        color: black;
+        text-decoration: underline;
+        letter-spacing: 0px;
+        font-weight: bold;
         font-size: 30px;
     }
 
     .header2 { 
         grid-area: he2; 
+        height: 50vh;
+        background-color: white;
+
     }
+
+    .newsimage {
+        grid-area: ni;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+       
+        width: 100%;
+        height: 70%;
+    }
+
+    .associationlogo {
+        grid-area: al;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin-left: 25%;
+       
+        width: 40%;
+    }
+    
+    
 
     .header3 { 
         grid-area: he3; 
+        height: 50vh;
+
+        color: black;
+        text-decoration: none;
+        letter-spacing: 0px;
+        font-weight: unset;
+        font-size: 30px;
     }
 
     .menu { 
-        grid-area: me;
-    }
+        grid-area: me; 
+        height: 50vh;
 
+        color: black;
+        text-decoration: none;
+        letter-spacing: 0px;
+        font-weight: unset;
+        font-size: 30px;
+    }
+    
     .main { 
         grid-area: ma; 
+        height: 50vh;
+
+        color: black;
+        text-decoration: none;
+        letter-spacing: 0px;
+        font-weight: unset;
+        font-size: 30px;
     }
 
     .right { 
         grid-area: ri; 
+        height: 50vh;
+
+        color: black;
+        text-decoration: none;
+        letter-spacing: 0px;
+        font-weight: unset;
+        font-size: 30px;
+        list-style: none;
     }
 
     .footer { 
         grid-area: fo; 
+        height: 25vh;
+
+        color: black;
+        text-decoration: none;
+        letter-spacing: 0px;
+        font-weight: unset;
+        font-size: 30px;
+    }
+
+    .swimofhopeimage {
+        grid-area: ni;
+        display: flex;
+        justify-content: center;
+        position: unset;
+        padding: 10px;
+        padding-left: 20%;
+       
+        width: 80%;
+        height: 75%;
+    }
+
+
+    #associationcontainer {
+        display: grid;
+        width: 100vw;
+        height: 50vh;
+
+        grid-template-areas:
+          'he2 he2 he2'
+          'he2 he2 he2'
+          'he2 he2 he2'
+          'he2 he2 he2'
+          'he2 he2 he2'
+          'he2 he2 he2'
+          ;
+        grid-gap: 10px;
+        background-color: rgba(0, 0, 0, 0.829);
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #associationarticlecontainer {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+        "ic ic ic ic"
+        "ic ic ic ic"
+        "ic ic ic ic"
+        
+        ;
+    
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 0vh;
+        
+    }
+
+    #associationcontainer > div {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+
+    
+
+
+
+
+
+    #competecontainer {
+        display: grid;
+        width: 100vw;
+        height: 150vh;
+
+        grid-template-areas:
+          'he2 he2 he2'
+          'he2 he2 he2'
+          'he3 he3 he3'
+          'he3 he3 he3'
+          'me me me'
+          'me me me'
+          ;
+        grid-gap: 10px;
+        background-color: rgba(0, 0, 0, 0.829);
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #competearticlecontainer {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+        "ic ic ic ic"
+        "ic ic ic ic"
+        "ic ic ic ic"
+        
+        ;
+    
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 0vh;
+        
+    }
+
+    #competecontainer > div {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+    #contactcontainer {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+
+        grid-template-areas:
+          'he4 he4 he4'
+          'he4 he4 he4'
+          'he4 he4 he4'
+          'he4 he4 he4'
+          'he4 he4 he4'
+          'he4 he4 he4'
+          ;
+        grid-gap: 10px;
+        background-color: rgba(0, 0, 0, 0.829);
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #contactarticlecontainer {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+        "ic ic ic ic"
+        "ic ic ic ic"
+        "ic ic ic ic"
+        
+        ;
+    
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 0vh;
+        
+    }
+
+    #contactcontainer > div {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .header4 {
+        grid-area: he4; 
+        height: 100vh;
+
+        color: black;
+        text-decoration: none;
+        letter-spacing: 0px;
+        font-weight: unset;
+        font-size: 30px;
+
+        list-style: none;
+
+        
     }
 
 
